@@ -14,10 +14,12 @@ class Meowcroft(MycroftSkill):
 
     @intent_file_handler('meowcroft.intent')
     def handle_meowcroft(self, message):
+        self.audioservice.play('file:///opt/mycroft/skills/meowcroft-skill.hotcakessanderson/catmeow1.mp3')
+        self.audioservice.play('file:///opt/mycroft/skills/meowcroft-skill.hotcakessanderson/catmeow2.mp3')
         self.audioservice.play('file:///opt/mycroft/skills/meowcroft-skill.hotcakessanderson/catmeow3.mp3')
         self.audioservice.play('file:///opt/mycroft/skills/meowcroft-skill.hotcakessanderson/catmeow4.mp3')
         self.audioservice.play('file:///opt/mycroft/skills/meowcroft-skill.hotcakessanderson/catmeow5.mp3')
-
+        self.audioservice.play('file:///opt/mycroft/skills/meowcroft-skill.hotcakessanderson/catmeow6.mp3')
 
 
 def create_skill():
